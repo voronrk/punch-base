@@ -1,7 +1,9 @@
 <div class="column is-2 filter">
     <form class="form" id="filter">
 
-        @include('filters.products', ['products' => $f1])
+        @include('filters.products', ['value' => $products, 'title'=> $products_title])
+        @include('filters.products', ['value' => $materials, 'title'=> $materials_title])
+        @include('filters.products', ['value' => $machines, 'title'=> $machines_title])
         
         {{-- <div class="field" id="products">
             <label class="label">Виды продукции</label>
