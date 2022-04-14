@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\FilterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [FilterController::class, 'getFilter']);
+
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+// Route::post('/products', [FilterController::class, 'getProducts'])->name('products');
 
 Route::get('admin', function () {
     return view('admin');
 });
+
