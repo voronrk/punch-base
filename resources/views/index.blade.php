@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/style.css">
     
     <script type="module" src="/js/script.js" defer></script>
+    <script  src="/js/vue.js" defer></script>
     <title>Каталог штанц-форм</title>
 </head>
 <body>
@@ -25,6 +26,5 @@
 
     @include('includes.modal')
 
-    
 </body>
 </html>

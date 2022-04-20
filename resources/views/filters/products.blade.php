@@ -1,5 +1,4 @@
-<div class="field" id="products">
-
+<div class="field" id="{{$id}}">
     <label class="label">{{$title}}</label>
     <div class="field-wrapper-small">
     @foreach($value as $item)

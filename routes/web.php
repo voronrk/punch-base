@@ -16,12 +16,6 @@ use \App\Http\Controllers\FilterController;
 
 Route::get('/', [FilterController::class, 'getFilter']);
 
-// Route::get('/', function () {
-//     return view('index');
-// });
-
-// Route::post('/products', [FilterController::class, 'getProducts'])->name('products');
-
 Route::get('admin', function () {
     return view('admin');
 });

@@ -15,11 +15,8 @@ class FilterController extends Controller
         $materials = Material::all();
         $machines = Machine::all();
         return view('index', [
-            'products_title' => 'Виды продукции',
             'products' => $products,
-            'materials_title' => 'Виды материалов',
             'materials' => $materials,
-            'machines_title' => 'Оборудование',
             'machines' => $machines,
         ]);
     }
